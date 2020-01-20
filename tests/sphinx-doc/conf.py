@@ -50,7 +50,8 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_pdj_theme'
+html_theme = 'rtd_darkmono'
+#html_theme = 'rtd_dark2'
 html_theme_path = ["_themes", ]
 
 # Add any paths that contain custom static files (such as style sheets) here,
