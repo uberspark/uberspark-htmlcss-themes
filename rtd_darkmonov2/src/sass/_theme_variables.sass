@@ -43,15 +43,32 @@ $menu-link-medium:                    $text-medium
 $menu-link-light:                     $text-lighter
 $menu-link-active:                    $white
 
+//////
 // Navigation colors
-$nav-background-color:                $menu-background-color
+//////
+
+// background color for side menu (the left most pane)   
+$nav-background-color:                rgba(0,0,0,1)
+// background color for actual content pane (the middle)
+$nav-content-background-color:            rgba(0,0,0,1)
+// background color for wrap pane (the right most)
+$nav-content-wrap-background-color:       rgba(0,0,0,1)
+//background color for side menu top most rectangle where search bar resides
 $nav-search-background-color:         $blue
+$body-for-nav-background-color:          rgba(0,0,0,1)
+
+
+
 $nav-search-color:                    $section-background-color
 $nav-link-color:                      $blue
 $nav-link-color-visited:              $purple
 $nav-link-color-hover:                lighten($nav-link-color, 6%) !default
 $nav-link-color-alt:                  hsl(33, 100%, 51%)
 $nav-caption:                         lighten($blue, 15%)
+
+
+
+
 
 // Sidebar colors
 $sidebar-background-color:            $table-stripe-color

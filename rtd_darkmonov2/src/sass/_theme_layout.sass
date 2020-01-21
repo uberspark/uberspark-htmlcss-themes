@@ -246,7 +246,7 @@ html
 
 
 .wy-body-for-nav
-  background: $section-background-color
+  background: $body-for-nav-background-color
 
 .wy-grid-for-nav
   position: absolute
@@ -303,7 +303,7 @@ html
 
 .wy-nav-content-wrap
   margin-left: $nav-desktop-width
-  background: $section-background-color
+  background: $nav-content-wrap-background-color
   min-height: 100%
 
 .wy-nav-content
@@ -311,6 +311,8 @@ html
   height: 100%
   max-width: $nav-content-width
   margin: auto
+  background: $nav-content-background-color
+  background-color: $nav-content-background-color
 
 .wy-body-mask
   position: fixed
@@ -363,7 +365,7 @@ footer
 
 +media($tablet)
   .wy-body-for-nav
-    background: $section-background-color
+    background: $body-for-nav-background-color
   .wy-nav-top
     display: block
   .wy-nav-side
@@ -394,10 +396,10 @@ footer
 
 @media screen and (min-width: $nav-media-query)
   .wy-nav-content-wrap
-    background: rgba(0,0,0,.05)
+    background: $nav-content-wrap-background-color
   .wy-nav-content
     margin: 0
-    background: $section-background-color
+    background: $nav-content-background-color
 
 @media print
   .rst-versions, footer, .wy-nav-side
