@@ -60,6 +60,28 @@ pre {
 	/*border-right: 1px solid #fcfcfc;*/
 }
 
+/* menu related entries follow */
+
+.wy-menu-vertical li.toctree-l1.current>a {
+    border-bottom: 1px solid #dd0000;
+    border-top: 1px solid #dd0000;
+	background-color: rgba(220, 110, 0, 1) !important;
+	background: rgba(220, 110, 0, 1) !important;
+	color : #ffffff;
+}
+
+.wy-menu-vertical li.current>a span.toctree-expand, .wy-menu-vertical li.on a span.toctree-expand {
+    display: block;
+    font-size: .8em;
+    line-height: 1.6em;
+    color: #ffffff
+}
+
+
+
+
+
+
 
 
 .method dt, .class dt, .data dt, .attribute dt, .function dt,
