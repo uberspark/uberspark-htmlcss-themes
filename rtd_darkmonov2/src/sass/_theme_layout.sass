@@ -94,7 +94,7 @@ pre
   // On state for the first level
   li.on a, li.current > a
     //color: $menu-link-color
-    color: $menu-fgcolor-l1heading
+    color: $menu-fgcolor-l1headingon
     padding: $gutter / 4 $gutter
     font-weight: bold
     position: relative
@@ -127,39 +127,55 @@ pre
   
   // This is the on state for pages beyond second level
   li.toctree-l2 a, li.toctree-l3 a, li.toctree-l4 a
-    color: $menu-link-color
+    //color: $menu-link-color
+    color: $menu-fgcolor-l2l3l4heading
   li.toctree-l1.current li.toctree-l2, li.toctree-l2.current li.toctree-l3
     > ul
       display: none
     &.current > ul
       display: block
+  
+  //level 2 toctree entries
   li.toctree-l2
     &.current
       > a
-        background: darken($menu-vertical-background-color, 20%)
+        //background: darken($menu-vertical-background-color, 20%)
+        color: $menu-fgcolor-l2headingon
+        background : $menu-bgcolor
         padding: $gutter / 4 $gutter * 1.5
       li.toctree-l3 > a
         display: block
-        background: darken($menu-vertical-background-color, 20%)
+        //background: darken($menu-vertical-background-color, 20%)
+        background: $menu-bgcolor
         padding: $gutter / 4 $gutter * 2.5
     a:hover span.toctree-expand
-      color: $menu-link-medium
+      //background: $menu-bgcolor-l2heading-hover
+      color: $menu-fgcolor-l2heading
     span.toctree-expand
-      color: darken($menu-vertical-background-color, 35%)
+      //color: darken($menu-vertical-background-color, 35%)
+      color: $menu-fgcolor-expandsign-l2
+  
   li.toctree-l3
     font-size: .9em
     &.current
       > a
-        background: darken($menu-vertical-background-color, 25%)
+        //background: darken($menu-vertical-background-color, 25%)
         padding: $gutter / 4 $gutter * 2.5
+        color: $menu-fgcolor-l3headingon
+        background : $menu-bgcolor
+
       li.toctree-l4 > a
         display: block
-        background: darken($menu-vertical-background-color, 25%)
+        //background: darken($menu-vertical-background-color, 25%)
+        background: $menu-bgcolor
         padding: $gutter / 4 $gutter * 3.5
     a:hover span.toctree-expand
-      color: $menu-link-medium
+      //color: $menu-link-medium
+      color: $menu-fgcolor-l3heading
     span.toctree-expand
-      color: darken($menu-vertical-background-color, 40%)
+      //color: darken($menu-vertical-background-color, 40%)
+      color: $menu-fgcolor-expandsign-l3
+
   li.toctree-l4
     font-size: .9em
 
