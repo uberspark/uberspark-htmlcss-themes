@@ -215,12 +215,15 @@ a:hover
     font-size: 90%
     color: $menu-link-light
     &:hover
-      background-color: lighten($menu-background-color, 10%)
+      //background-color: lighten($menu-background-color, 10%)
+      background-color: $menu-bgcolor-hover
       cursor: pointer
       span.toctree-expand
         color: $menu-link-light
+    //kicks in when user clicks on any of the vertical menu links
     &:active
-      background-color: $menu-logo-color
+      //background-color: $menu-logo-color
+      background-color: $menu-bgcolor
       cursor: pointer
       color: $menu-link-active
       span.toctree-expand
