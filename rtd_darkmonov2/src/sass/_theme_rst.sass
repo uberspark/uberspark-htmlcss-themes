@@ -14,6 +14,9 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 .rst-content
+  h1
+    color: lighten($green, 40%)
+  
   // Sphinx by default applies HxW style attributes to images. This fixes that oversite.
   img
     max-width: 100%
@@ -114,6 +117,7 @@
   // These are the various note pullouts that sphinx applies
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning, .seealso, .admonition-todo, .admonition
     @extend .wy-alert
+    background: $gray
     // These block elements are unsuitable for having floating objects next
     // to them
     clear: both
@@ -123,6 +127,7 @@
     @extend .wy-alert-title
     @extend .fa
     @extend .fa-exclamation-circle
+    background: $green
     &:before
       margin-right: 4px
   .note, .seealso
@@ -178,6 +183,7 @@
       display: block
   .toctree-wrapper p.caption
     @extend h2
+    color: lighten($green, 40%)
 
   // This is the #href that shows up on hover. Sphinx's is terrible so I hack it away.
   h1, h2, h3, h4, h5, h6, dl dt, p.caption, table > caption, .code-block-caption
