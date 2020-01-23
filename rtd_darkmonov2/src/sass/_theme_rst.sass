@@ -13,6 +13,7 @@
 //    4. If you have changes for mobile/tablet, put them at the bottom of the sass file.
 // --------------------------------------------------------------------------------------------------------------------
 
+  
 .rst-content
   h1
     color: lighten($green, 40%)
@@ -117,7 +118,7 @@
   // These are the various note pullouts that sphinx applies
   .note, .attention, .caution, .danger, .error, .hint, .important, .tip, .warning, .seealso, .admonition-todo, .admonition
     @extend .wy-alert
-    background: $gray
+    background: darken($gray, 10%)
     // These block elements are unsuitable for having floating objects next
     // to them
     clear: both
@@ -125,9 +126,9 @@
       margin-bottom: 0
   .admonition-title
     @extend .wy-alert-title
+    color: $black
     @extend .fa
     @extend .fa-exclamation-circle
-    background: $green
     &:before
       margin-right: 4px
   .note, .seealso
