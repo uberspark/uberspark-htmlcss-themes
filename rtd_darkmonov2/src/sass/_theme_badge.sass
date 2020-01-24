@@ -7,6 +7,7 @@
   background: darken($menu-background-color, 8%)
   font-family: $base-font-family
   z-index: $z-index-tray
+
   a
     color: $link_color
     text-decoration: none
@@ -36,7 +37,9 @@
   &.shift-up
     height: auto
     max-height: 100%
-    overflow-y: scroll
+    overflow-x: hidden
+    overflow-y: auto
+
   &.shift-up .rst-other-versions
     display: block
   .rst-other-versions
