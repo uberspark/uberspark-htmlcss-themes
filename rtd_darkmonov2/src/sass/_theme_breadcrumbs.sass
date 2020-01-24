@@ -8,8 +8,15 @@
   a
     display: inline-block
     padding: 5px
+    color: $green
     &:first-child
       padding-left: 0
+
+  a:hover
+    color: $white
+    background: $nav-search-background-color
+    text-decoration: none
+
   code
     padding: 5px
     border: none
@@ -22,6 +29,15 @@
   font-size: 80%
   display: inline-block
 
+.wy-breadcrumbs li:not(:first-child):before 
+    content: " | "
+    color: $white
+
+.wy-breadcrumbs-hr
+    height: 1px
+    color: $green
+    background-color: $black
+    border-top: 1px dashed $green
 
 +media($mobile)
   .wy-breadcrumbs-extra
