@@ -3,8 +3,9 @@
   bottom: 0
   left: 0
   width: $nav-desktop-width
-  color: $section-background-color
-  background: darken($menu-background-color, 8%)
+  color: $nav-search-color
+  /* background color of the versions bar on expand */
+  background: $nav-background-color
   font-family: $base-font-family
   z-index: $z-index-tray
 
@@ -15,15 +16,17 @@
     display: none
   .rst-current-version
     padding: $base-line-height / 2
-    background-color: darken($menu-background-color, 5%)
+    /* color of the bar where we have v: xxx on versions */
+    background-color: $nav-search-background-color
     display: block
     text-align: right
     font-size: 90%
     cursor: pointer
-    color: $green
+    color: $menu-fgcolor-caption
     +clearfix
+    /* color of the text on versions bar where we have v */
     .fa
-      color: $section-background-color
+      color: $nav-search-color
     .fa-book
       float: left
     .icon-book
