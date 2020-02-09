@@ -53,6 +53,21 @@ exclude_patterns = []
 html_theme = 'rtd_darkmono'
 #html_theme = 'rtd_dark2'
 html_theme_path = ["_themes", ]
+html_theme_options = {
+    'style_external_links': True,
+    'current_version' : 'latest',
+    'versions' : {
+    'stable' : 'en/stable',
+    'latest' : 'en/latest'
+    },
+    'downloads' : {
+    'PDF' : 'uberspark.pdf',
+    'HTMLZIP' : 'uberspark.html.zip'
+    }
+
+
+}    
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
