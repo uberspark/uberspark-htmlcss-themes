@@ -16,7 +16,16 @@
   
 .rst-content
   h1
-    color: lighten($green, 40%)
+    color: lighten($rst_heading_base, 10%)
+
+  h2
+    color: darken($rst_heading_base, 10%)
+
+  h3
+    color: darken($rst_heading_base, 20%)
+  
+  h4
+    color: darken($rst_heading_base, 30%)
   
   // Sphinx by default applies HxW style attributes to images. This fixes that oversite.
   img
@@ -313,7 +322,7 @@
       line-height: normal
 
     &.literal
-      color: $text-code-color
+      color: $rst-code-literal
     &.xref, a &
       font-weight: bold
       color: $text-codexref-color

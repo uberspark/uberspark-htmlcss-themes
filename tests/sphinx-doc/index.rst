@@ -34,7 +34,7 @@ libraries
 
 .. toctree::
    :maxdepth: 2
-   :caption: Next Generation (Experimental) Toolkit:
+   :caption: [(Experimental) Next-Gen Toolkit]
 
    nextgen-toolkit/intro
    nextgen-toolkit/sw-requirements
