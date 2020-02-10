@@ -55,7 +55,14 @@ html_theme = 'rtd_darkmono'
 html_theme_path = ["_themes", ]
 html_theme_options = {
     'style_external_links': True,
+
+    'current_language' : 'en',
     'current_version' : 'latest',
+
+    'languages' : {
+    'en' : 'en/'
+    },
+
     'versions' : {
     'stable' : 'en/stable',
     'latest' : 'en/latest'
