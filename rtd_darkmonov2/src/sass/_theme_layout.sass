@@ -1,8 +1,30 @@
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%))
+  // For Google Chrome
+  &::-webkit-scrollbar
+    width:  $size
+    height: $size
+  
+  &::-webkit-scrollbar-thumb
+    background: $foreground-color
+
+  &::-webkit-scrollbar-track
+    background: $background-color
+
+  // For Internet Explorer
+  &
+    scrollbar-face-color: $foreground-color
+    scrollbar-track-color: $background-color
+
+
+
+
 // Set uniform (but not relative) base font size
 html
   font-size: $base-font-size
 
 body
+  @include scrollbars(8px, $global-scrollbar-thumb, $global-scrollbar-track)
   background-color : rgba(0,0,0,1)
 
 pre 
@@ -339,6 +361,7 @@ a:hover
 
 .wy-side-scroll
   //width: $nav-desktop-width + 20px
+  @include scrollbars(8px, $global-scrollbar-thumb, $global-scrollbar-track)
   width: $nav-desktop-width
   position: relative
   overflow-x: hidden
