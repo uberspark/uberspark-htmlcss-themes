@@ -1,2 +1,0 @@
-recursive-include sphinx_pdj_theme *
-recursive-exclude sphinx_pdj_theme *~
