@@ -24,7 +24,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 project = 'überSpark Documentation'
-copyright = '2019, Amit Vasudevan'
+copyright = '2020, überSpark Team'
 author = 'https://uberspark.org'
 release = 'Version: 5.0; Release Series: "Chase"'
 
