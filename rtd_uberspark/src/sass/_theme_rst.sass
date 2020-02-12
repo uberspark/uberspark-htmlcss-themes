@@ -283,16 +283,32 @@
   // Re-add vertical space after citation and footnotes if it is the last child of a parent
   .wy-table-responsive.citation:last-child, .wy-table-responsive.footnote:last-child
     margin-bottom: $base-line-height
+  
   table.docutils
     @extend .wy-table
     @extend .wy-table-bordered-all
+    thead
+      th
+        background-color: $rst-table-cell-background
+        color: $rst-table-cell-header
+        border: 1px solid
     th
       border-color: $table-border-color
+      
     &:not(.field-list)
       @extend .wy-table-striped
+      
+      tr:nth-child(2n-1)
+        td
+          background-color: $rst-table-cell-background-highlighted
+          white-space: normal
+      td
+        background-color: $rst-table-cell-background 
+        white-space: normal
     // Remove bottom margin for the last element (and it's last child)
     td .last, td .last :last-child
       margin-bottom: 0
+  
   // This table is what gets spit out for auto-generated API stuff. I style it smaller bits of padding.
   table.field-list
     @extend .wy-table

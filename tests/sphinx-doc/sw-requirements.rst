@@ -28,6 +28,19 @@ Another
     Who is this and what we are determines the lists
 
 
+.. tabularcolumns:: |c|c|c|c|
+
+.. csv-table:: ``uberspark-manifesthdr`` node
+   :header: "field name", "field type", "description", "possible values"
+   :class: longtable
+   :widths: 20, 20, 20, 20
+
+   "manifest_node_types", "comma separated list of strings", "x", "x"
+   "uberspark_min_version", "string", "x", "x"
+   "uberspark_max_version", "string", "x", "X"
+
+
+
 You will need a working Ubuntu 16.04.x LTS 64-bit environment for development and 
 verification. This can either be a Virtual Machine (VM) (e.g., VirtualBox) or a 
 container (e.g., Windows WSL). As of this writing, the Ubuntu 16.04.x LTS VM ISO 
