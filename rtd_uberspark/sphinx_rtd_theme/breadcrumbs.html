@@ -48,6 +48,21 @@
     {% endblock %}
   </ul>
 
+  <hr class="wy-breadcrumbs-hrmbzero" >
+
+  <ul class="wy-breadcrumbs">
+    {% block breadcrumbs_ext %}
+  
+    <li><a href="{{ pathto(master_doc) }}" class="fa fa-book">TOC</a></li>
+      {% for doc in parents %}
+        <li><a href="{{ doc.link|e }}">{{ doc.title }}</a> &raquo;</li>
+      {% endfor %}
+      <li>{{ title }}</li>
+
+    {% endblock %}
+  </ul>
+
+
   {% if (theme_prev_next_buttons_location == 'top' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       {% if next %}
@@ -58,5 +73,7 @@
       {% endif %}
   </div>
   {% endif %}
-  <hr class="wy-breadcrumbs-hr" >
+  <hr class="wy-breadcrumbs-hrmtzero" >
+
+
 </div>
